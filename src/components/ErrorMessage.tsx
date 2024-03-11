@@ -1,5 +1,7 @@
-export default function ErrorMessage({ message }) {
-    return (
-        <div>{message}</div>
-    )
+type ErrorMessageProps = {
+  message: string
+}
+
+export default function ErrorMessage({ message }: ErrorMessageProps) {
+  return <div>{message}</div>
 }
